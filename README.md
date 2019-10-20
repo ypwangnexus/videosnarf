@@ -7,7 +7,7 @@ mirror of videosnarf-0.63 but...
 # install
 
 ```bash
-$ git clone https://github.com/bit4bit/videosnarf.git
+$ git clone https://github.com/ypwangnexus/videosnarf.git
 $  cd videosnarf
 $ ./autogen.sh
 $ ./configure
