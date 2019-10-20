@@ -31,7 +31,7 @@ int decode_payload_g729(struct MediaStream *currentMS, u_char *payload, int size
   int i = 0;
   for(i = 0; i < num_of_frame_compressed; i++){
     memcpy(serial, payload + (i * L_FRAME_COMPRESSED), L_FRAME_COMPRESSED);
-    bcg729Decoder(decoder, serial, 0, synth);
+    bcg729Decoder(decoder, serial, 0, 0, 0, 0, synth);
 
     size_t ret = fwrite(synth,sizeof(short),L_FRAME,currentMS->fp);
     if(ret < L_FRAME){
